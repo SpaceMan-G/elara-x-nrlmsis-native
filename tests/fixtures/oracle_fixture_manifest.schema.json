@@ -1,0 +1,127 @@
+{
+  "$id": "https://example.invalid/elara-x-nrlmsis-native/oracle_fixture_manifest.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "authority": {
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "role": {
+          "enum": [
+            "primary_official_oracle",
+            "secondary_comparator"
+          ],
+          "type": "string"
+        }
+      },
+      "required": [
+        "name",
+        "role"
+      ],
+      "type": "object"
+    },
+    "comparison_contract": {
+      "additionalProperties": false,
+      "properties": {
+        "tolerance_status": {
+          "enum": [
+            "UNLOCKED",
+            "LOCKED"
+          ],
+          "type": "string"
+        },
+        "units_locked": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "tolerance_status",
+        "units_locked"
+      ],
+      "type": "object"
+    },
+    "fixture_id": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "payload": {
+      "additionalProperties": false,
+      "properties": {
+        "included": {
+          "type": "boolean"
+        },
+        "record_count": {
+          "minimum": 1,
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "sha256": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "included",
+        "sha256",
+        "record_count"
+      ],
+      "type": "object"
+    },
+    "provenance": {
+      "additionalProperties": false,
+      "properties": {
+        "generation_method": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "licence_distribution_status": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "reference_output_sha256": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        "reference_record_count": {
+          "minimum": 1,
+          "type": "integer"
+        },
+        "source_archive_sha256": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        }
+      },
+      "required": [
+        "source_archive_sha256",
+        "reference_output_sha256",
+        "reference_record_count",
+        "generation_method",
+        "licence_distribution_status"
+      ],
+      "type": "object"
+    },
+    "schema_version": {
+      "const": "1.0",
+      "type": "string"
+    }
+  },
+  "required": [
+    "schema_version",
+    "fixture_id",
+    "authority",
+    "provenance",
+    "payload",
+    "comparison_contract"
+  ],
+  "title": "Elara X NRLMSIS Oracle Fixture Manifest",
+  "type": "object"
+}
