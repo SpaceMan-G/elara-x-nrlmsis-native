@@ -1,0 +1,1 @@
+# Elara X NRLMSIS Native - ATMO-M01.3 placeholder\n# Authoritative NRL source counterpart: msis_dfn.F90\n# Purpose: Future species-density formulation.\n# No NRLMSIS scientific equations or translated computational logic are present yet.\n# Derivative scientific translation begins only in a later controlled phase.\n# See LICENSE_NRLMSIS21.txt in the component root.\n

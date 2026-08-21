@@ -1,0 +1,1 @@
+# Tests\n\nNo scientific implementation exists yet. Future phases add equivalence tests.\n

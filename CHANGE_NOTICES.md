@@ -1,0 +1,1 @@
+# Change Notices\n\n## 2026-08-21 - ATMO-M01.3\n\n- Created public-component skeleton.\n- No scientific equations translated.\n- Copied exact NRLMSIS 2.1 licence from frozen authority.\n- Bound component to ATMO-M01.2 lock `1f347d2e9ba726b49104211787e429ffa1ed6acf5768153996b18db93d47d60e`.\n

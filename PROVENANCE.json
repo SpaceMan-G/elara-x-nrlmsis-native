@@ -1,0 +1,10 @@
+{
+  "accepted_rasti_mutated": false,
+  "component": "elara-x-nrlmsis-native",
+  "created_utc": "2026-08-21T13:34:55.070434+00:00",
+  "elara_x_project_mutated": false,
+  "parent_lock_sha256": "1f347d2e9ba726b49104211787e429ffa1ed6acf5768153996b18db93d47d60e",
+  "programme": "ELARA_X_ATMO_M01_3",
+  "scientific_translation_present": false,
+  "version": "1.0.2"
+}

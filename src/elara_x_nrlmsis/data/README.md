@@ -1,0 +1,1 @@
+# Model data\n\nNo NRLMSIS model parameter data are copied into this ATMO-M01.3 skeleton.\n
